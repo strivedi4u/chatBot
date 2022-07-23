@@ -10,8 +10,9 @@
   <link rel="stylesheet" href="../CSS/index.css">
   <script src="../JS/connector.js"></script>
   </head>
-
-<body>
+  <div id="loader"></div>
+<body onload="myFunction()">
+    <section id="b">
   <nav class="navbar fixed-top navbar-light bg-light">
     <br><br>
     <header style="background-color:white;" id="navbar">
@@ -48,9 +49,28 @@
     </header>
   </nav>
   <script src="../JS/nav.js"></script>
+  <div w3-include-html="./HTML/loading.html"></div>
   <div w3-include-html="about.html"></div>
   <div w3-include-html="footer.html"></div>
   <script>includeHTML();</script>
 <br><br><br>
+
+
+
+
+<script>
+    var myVar;
+     function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+    }
+    
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("b").style.display = "block";
+      document.getElementById("myDiv").style.display = "block";
+    }
+
+    </script>
+    </section>
 </body>
 </html>

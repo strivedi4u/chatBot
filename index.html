@@ -11,7 +11,10 @@
   <script src="JS/connector.js"></script>
   </head>
 
-<body>
+<body onload="myFunction()">
+  <div id="loader"></div>
+  <section id="b">
+    
   <nav class="navbar fixed-top navbar-light bg-light">
     <br><br>
     <header style="background-color:white;" id="navbar">
@@ -47,11 +50,28 @@
       </nav>
     </header>
   </nav>
+
   <script src="./JS/nav.js"></script>
   <center><iframe style="margin-top:-40px;" width="100%" height="195%" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/6d17f974-1372-4ec2-8853-f4489e370598"></iframe></center>
   
   <div w3-include-html="./HTML/footer.html"></div>
   <script>includeHTML();</script>
 <br><br><br>
+
+
+<script>
+  var myVar;
+   function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+  }
+  
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("b").style.display = "block";
+    document.getElementById("myDiv").style.display = "block";
+  }
+
+  </script>
+  </section>
 </body>
 </html>
