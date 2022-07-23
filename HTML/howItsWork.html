@@ -1,76 +1,82 @@
 <html>
 
 <head>
-  <title>DS ChatBot</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="../CSS/index.css">
-  <script src="../JS/connector.js"></script>
-  </head>
-  <div id="loader"></div>
+    <title>DS ChatBot</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../CSS/index.css">
+    <script src="../JS/connector.js"></script>
+</head>
+<center>
+    <div id="loader"></div>
+</center>
+
 <body onload="myFunction()">
     <section id="b">
-  <nav class="navbar fixed-top navbar-light bg-light">
-    <br><br>
-    <header style="background-color:white;" id="navbar">
-      <nav style="background-color:white;" class="navbar-container container">
-        <a style="color:black; font-size:25px;" href="#" class="home-link">
-          <div class="navbar-logo"></div>
-          <span style="color: red;" class="a"><b> D&nbsp;</b></span>
-          <span style="color: #2EBF75;" class="b"><b> S&nbsp;</b></span>
-          <span style="color: yellow;" class="c"><b>Chat</b></span>
-          <span style="color: blue;" class="d"><b>-Bot</b></span>
-        </a>
-        <button style="color:black;  onclick:none;" type="button" class="navbar-toggle"
-          aria-label="Open navigation menu" style="white-space:nowrap;">
-          <span style="color:black; onclick:none; background-color:black;" class="icon-bar"></span>
-          <span style="color:black; onclick:none; background-color:black;" class="icon-bar"></span>
-          <span style="color:black; onclick:none; background-color:black;" class="icon-bar"></span>
-        </button>
-        <div style="color:black; onclick:none;" class="navbar-menu detached" style="white-space:nowrap;">
-          <ul style="color:black; onclick:none; background-color:white;" class="navbar-links"
-            style="white-space:nowrap;">
+        <nav class="navbar fixed-top navbar-light bg-light">
+            <br><br>
+            <header style="background-color:white;" id="navbar">
+                <nav style="background-color:white;" class="navbar-container container">
+                    <a style="color:black; font-size:25px;" href="#" class="home-link">
+                        <div class="navbar-logo"></div>
+                        <span style="color: red;" class="a"><b> D&nbsp;</b></span>
+                        <span style="color: #2EBF75;" class="b"><b> S&nbsp;</b></span>
+                        <span style="color: yellow;" class="c"><b>Chat</b></span>
+                        <span style="color: blue;" class="d"><b>-Bot</b></span>
+                    </a>
+                    <button style="color:black;  onclick:none;" type="button" class="navbar-toggle"
+                        aria-label="Open navigation menu" style="white-space:nowrap;">
+                        <span style="color:black; onclick:none; background-color:black;" class="icon-bar"></span>
+                        <span style="color:black; onclick:none; background-color:black;" class="icon-bar"></span>
+                        <span style="color:black; onclick:none; background-color:black;" class="icon-bar"></span>
+                    </button>
+                    <div style="color:black; onclick:none;" class="navbar-menu detached" style="white-space:nowrap;">
+                        <ul style="color:black; onclick:none; background-color:white;" class="navbar-links"
+                            style="white-space:nowrap;">
 
-            <li style="color:black; background-color:white;" class="navbar-item"><a
-                style="color:black; background-color:white; white-space:nowrap;" style="white-space:nowrap;"
-                class="navbar-link" style="white-space:nowrap;" href="../index.html">Home</a></li>
+                            <li style="color:black; background-color:white;" class="navbar-item"><a
+                                    style="color:black; background-color:white; white-space:nowrap;"
+                                    style="white-space:nowrap;" class="navbar-link" style="white-space:nowrap;"
+                                    href="../index.html">Home</a></li>
 
-            <li style="color:black; background-color:white;" class="navbar-item"><a
-                style="color:black; background-color:white; white-space:nowrap;" style="white-space:nowrap;"
-                class="navbar-link" style="white-space:nowrap;" href="./howItsWork.html">How Its Work?</a>
-            </li>
+                            <li style="color:black; background-color:white;" class="navbar-item"><a
+                                    style="color:black; background-color:white; white-space:nowrap;"
+                                    style="white-space:nowrap;" class="navbar-link" style="white-space:nowrap;"
+                                    href="./howItsWork.html">How Its Work?</a>
+                            </li>
 
-          </ul>
-        </div>
-      </nav>
-    </header>
-  </nav>
-  <script src="../JS/nav.js"></script>
-  <div w3-include-html="./HTML/loading.html"></div>
-  <div w3-include-html="about.html"></div>
-  <div w3-include-html="footer.html"></div>
-  <script>includeHTML();</script>
-<br><br><br>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+        </nav>
+        <script src="../JS/nav.js"></script>
+        <div w3-include-html="./HTML/loading.html"></div>
+        <div w3-include-html="about.html"></div>
+        <div w3-include-html="footer.html"></div>
+        <script>includeHTML();</script>
+        <br><br><br>
 
 
 
 
-<script>
-    var myVar;
-     function myFunction() {
-      myVar = setTimeout(showPage, 3000);
-    }
-    
-    function showPage() {
-      document.getElementById("loader").style.display = "none";
-      document.getElementById("b").style.display = "block";
-      document.getElementById("myDiv").style.display = "block";
-    }
+        <script>
+            var myVar;
+            function myFunction() {
+                myVar = setTimeout(showPage, 3000);
+            }
 
-    </script>
+            function showPage() {
+                document.getElementById("loader").style.display = "none";
+                document.getElementById("b").style.display = "block";
+                document.getElementById("myDiv").style.display = "block";
+            }
+
+        </script>
     </section>
 </body>
+
 </html>
