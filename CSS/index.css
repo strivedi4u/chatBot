@@ -14,7 +14,7 @@ body {
 /* Center the loader */
 #loader {
     position: absolute;
-    left: 48%;
+    left: 49%;
     top: 40%;
     z-index: 1;
     width: 45px;
