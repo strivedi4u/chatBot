@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
 }
+
 html,
 body {
     width: 100%;
@@ -11,150 +12,25 @@ body {
     background-size: cover;
     height: 70%;
 }
+
 /* Center the loader */
 #loader {
     position: absolute;
-    left: 49%;
-    top: 40%;
-    z-index: 1;
-    width: 45px;
-    height: 45px;
-    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    z-index: 99999;
+
+
 }
 
-
-  
-  @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-  
-  /* Add animation to "page content" */
-  .animate-bottom {
-    position: relative;
-    -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 1s;
-    animation-name: animatebottom;
-    animation-duration: 1s
-  }
-  
-  @-webkit-keyframes animatebottom {
-    from { bottom:-100px; opacity:0 } 
-    to { bottom:0px; opacity:1 }
-  }
-  
-  @keyframes animatebottom { 
-    from{ bottom:-100px; opacity:0 } 
-    to{ bottom:0; opacity:1 }
-  }
-  
- 
-  #b{
+#b {
     display: none;
-    
-  }
-.flex-container {
-    display: -webkit-flex;
-    display: flex;
-    padding: 0px;
-    margin: 0px;
-    -webkit-justify-content: center;
-    justify-content: center;
-    width: 100%;
-    height: 33.33%;
-}
-.flex-item {
-    width: 33.33%;
-    height: 100%;
-    text-align: center;
-}
-#flex1 {
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 85px;
-    color: red;
-}
-#flex2 {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 85px;
-    color: red;
-}
-#flex3 {
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 85px;
-    color: red;
-}
-#flex4 {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 85px;
-    color: red;
-}
-#flex5 {
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 85px;
-    color: red;
-}
-#flex6 {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 85px;
-    color: red;
-}
-#flex7 {
 
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 85px;
-    color: red;
 }
-#flex8 {
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 85px;
-    color: red;
-}
-#flex9 {
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 85px;
-    color: red;
-}
+
 .facebook {
     background: #3B5998;
     color: white;
@@ -199,6 +75,7 @@ body {
     font-size: 22px;
     width: 20%;
 }
+
 #navbar {
     --navbar-height: 64px;
     position: fixed;
@@ -208,6 +85,7 @@ body {
     right: 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
+
 .navbar-container {
     display: flex;
     justify-content: space-between;
